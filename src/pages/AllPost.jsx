@@ -20,6 +20,7 @@ function AllPost() {
             </div>
           ))}
         </div>
+          <h1 className="text-4xl text-center">allpost </h1>
       </Container>
     </div>
   );

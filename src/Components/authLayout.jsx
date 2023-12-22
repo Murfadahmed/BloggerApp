@@ -21,9 +21,10 @@ export default function Protected({ children, authentication = true }) {
     } else if (!authentication && authStatus !== authentication) {
       navigate("/");
     }
+
     setLoading(false);
   }, [authStatus, navigate, authentication]);
 
-//   yahan yahn 
+  //   yahan yahn
   return loading ? <h1>Loading....</h1> : <>{children}</>;
 }
